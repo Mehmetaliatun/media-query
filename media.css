@@ -1,3 +1,4 @@
+@import url("theme.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   background-color: var(--mavi-9);
   color: var(--siyah);
   font-weight: 500;
+  margin: 1rem;
 }
 h1 {
   background-color: var(--koyu-kirmizi);
@@ -28,6 +30,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
   background-color: var(--gri-3);
+  margin-bottom: 0.5rem;
 }
 .navbar a {
   text-decoration: none;
@@ -54,7 +57,7 @@ h1 {
   background-color: var(--gri-5);
 }
 .aws {
-  width: 28%;
+  width: 20%;
   background-color: var(--gri-6);
 }
 .data {
@@ -64,4 +67,27 @@ h1 {
 .cms {
   width: 15%;
   background-color: var(--gri-8);
+}
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  body {
+    color: var(--beyaz);
+    background-color: var(--acik-kirmizi);
+  }
+  .col {
+    width: 50%;
+    margin: 0.5rem 0;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 599px) {
+  body {
+    background-color: var(--mor);
+    color: var(--beyaz);
+  }
+  .header {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
 }
