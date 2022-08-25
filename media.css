@@ -48,6 +48,7 @@ h1 {
   text-align: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1rem 0;
 }
 .col {
   padding: 1rem;
@@ -75,7 +76,7 @@ h1 {
   }
   .col {
     width: 50%;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
   }
 }
 @media screen and (min-width: 0px) and (max-width: 599px) {
@@ -89,5 +90,8 @@ h1 {
   .navbar {
     flex-direction: column;
     text-align: center;
+  }
+  .col {
+    width: 100%;
   }
 }
